@@ -15,3 +15,13 @@
 .image{
     border-radius: 5%;
 }
+
+hr{
+    width: 30%;
+    background-color: #303030;
+}
+
+h2{
+    font-weight: normal;
+    margin-bottom: 10px;
+}

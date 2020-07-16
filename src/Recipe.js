@@ -5,6 +5,8 @@ const Recipe = ({title, calories, image, ingredients}) => {
     return(
         <div className={style.recipe}>
             <h1>{title}</h1>
+            <h2>Ingredients</h2>
+            <hr/>
             <ol>
                 {ingredients.map(ingredient => (
                     <li>
@@ -12,7 +14,7 @@ const Recipe = ({title, calories, image, ingredients}) => {
                     </li>
                 ))}
             </ol>
-            <p>{calories}</p>
+            <p>Calories - {Math.trunc(calories)}</p>
             <img className={style.image} src={image}/>
         </div>
     );
